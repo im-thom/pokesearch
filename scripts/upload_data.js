@@ -1,13 +1,23 @@
 // Import dogs from JSON File
-const data = require('../data/pokedex_clean.json')
+const data = require('../data/breeds.json');
+
 // Lodash library for batch uploads
-const _ = require("lodash")
+const _ = require("lodash");
+
+// Allows us to get environment variables to hide API keys
+require('dotenv').config();
+
 // Algolia search library
 const algoliasearch = require("algoliasearch");
+
+// Obfuscate admin key using environment variable
+const ALGOLIA_ADMIN_KEY = process.env.ALGOLIA_ADMIN_KEY;
+
 // Setup client
-const client = algoliasearch("X55AEDZ16K", "5fdc1319e2a1dd071775c965eb492c21");
+const client = algoliasearch("X55AEDZ16K", ALGOLIA_ADMIN_KEY);
+
 // Initiate project
-const index = client.initIndex("pokemon");
+const index = client.initIndex("dogs");
 
 
 // Helper function that runs a standard data upload

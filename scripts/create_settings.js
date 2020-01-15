@@ -1,7 +1,12 @@
 // Algolia search library
 const algoliasearch = require("algoliasearch");
 
-const search = algoliasearch("X55AEDZ16K", "5fdc1319e2a1dd071775c965eb492c21");
+// Allows us to get environment variables to hide API keys
+require('dotenv').config();
+
+// Obfuscate admin key using environment variable
+const ALGOLIA_ADMIN_KEY = process.env.ALGOLIA_ADMIN_KEY
+const search = algoliasearch("X55AEDZ16K", ALGOLIA_ADMIN_KEY);
 
 const index = search.initIndex("pokemon");
 
