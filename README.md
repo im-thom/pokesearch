@@ -48,4 +48,9 @@ For Algolia Data Scripts
 
 
 # Feedback about Algolia
-
+Pros:
+* Love the Youtube videos! I watched the whole Algolia Build 101 series (Javascript implementation) - they were awesome! Small enough they didn't feel like a drag, yet contained enough detail they were still extremely informative.
+* Documentation is great
+* Widget library makes it so easy to get something up and running quickly and easily!
+Cons:
+* Trying to come up with something negative... Nothing striking yet...
