@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/pokesearch/app/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/pokesearch/app/static/js/main.ae6322a0.chunk.js",
+    "main.js.map": "/pokesearch/app/static/js/main.ae6322a0.chunk.js.map",
+    "runtime-main.js": "/pokesearch/app/static/js/runtime-main.e959e2db.js",
+    "runtime-main.js.map": "/pokesearch/app/static/js/runtime-main.e959e2db.js.map",
+    "static/js/2.1d9e0624.chunk.js": "/pokesearch/app/static/js/2.1d9e0624.chunk.js",
+    "static/js/2.1d9e0624.chunk.js.map": "/pokesearch/app/static/js/2.1d9e0624.chunk.js.map",
+    "index.html": "/pokesearch/app/index.html",
+    "precache-manifest.57703319f477ec4aacd4638d938133f7.js": "/pokesearch/app/precache-manifest.57703319f477ec4aacd4638d938133f7.js",
+    "service-worker.js": "/pokesearch/app/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/pokesearch/app/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.1d9e0624.chunk.js.LICENSE": "/pokesearch/app/static/js/2.1d9e0624.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e959e2db.js",
+    "static/js/2.1d9e0624.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.ae6322a0.chunk.js"
+  ]
+}

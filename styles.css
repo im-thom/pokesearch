@@ -1,0 +1,241 @@
+main {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: min-content auto;
+  grid-template-areas:
+    "header header header"
+    ". container .";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.header {
+  grid-area: header;
+  background-color: tomato;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #3C59A5;
+}
+
+.container {
+  padding-top: 2rem;
+  grid-area: container;
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) 5fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "filters results";
+}
+
+.search-header {
+  grid-area: header;
+}
+
+.left-column {
+  grid-area: filters;
+}
+
+.right-column {
+  grid-area: results;
+}
+
+.hit-item {
+  padding: 20px;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.hit-image {
+  max-height: 80px;
+  width: auto;
+}
+
+.hit-image-container {
+}
+
+.hit-content-container {
+  padding: 0rem 2rem;
+}
+
+.hit-title {
+  /* font-weight: 700; */
+}
+
+.types,
+.weaknesses {
+  font-size: 12px;
+}
+
+.types {
+  margin-left: 5px;
+}
+
+.pill {
+  color: #ffffff;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-right: 4px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.stats {
+  font-size: 12px;
+}
+
+.bug {
+  background-color: #8fac3d;
+}
+.fire {
+  background-color: #cc6f29;
+}
+.fighting {
+  background-color: #bc354f;
+}
+.water {
+  background-color: #4da3b9;
+}
+.flying {
+  background-color: #6c85ab;
+}
+.grass {
+  background-color: #5dbe7a;
+}
+.electric {
+  background-color: #cba93b;
+}
+.ground {
+  background-color: #917642;
+}
+.psychic {
+  background-color: #cd655b;
+}
+.rock {
+  background-color: #a76f43;
+}
+.ice {
+  background-color: #71adae;
+}
+.dragon {
+  background-color: #20648a;
+}
+.ghost {
+  background-color: #6a648a;
+}
+.dark {
+  background-color: #474d5c;
+}
+.steel {
+  background-color: #76a4a1;
+}
+.fairy {
+  background-color: #9e5884;
+}
+.poison {
+  background-color: #a8469a;
+}
+.normal {
+  background-color: #848586;
+}
+
+/* Customisation to Pagination */
+
+.ais-Pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.ais-Pagination-item--selected {
+  color: #000000;
+  font-weight: 700;
+}
+
+.ais-Pagination-list {
+  list-style: none;
+  width: 220px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.ais-Pagination-list li {
+  display: inline;
+}
+.ais-Pagination-list > li > a {
+  text-decoration: none;
+  color: #848586;
+  margin-right: 4px;
+}
+
+.ais-Hits-list {
+  list-style: none;
+  padding: 0em 1em;
+}
+
+.ais-RefinementList-list {
+  list-style: none;
+  padding: 0;
+  font-size: 12px;
+}
+
+.ais-Highlight-highlighted {
+  background-color: yellow;
+}
+
+.pill .ais-Highlight-highlighted {
+  background-color: yellow;
+  color: #000000;
+}
+
+.ais-SearchBox-input {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 15px;
+  border: none;
+}
+
+.custom-search-container {
+  width: 400px;
+  min-width: 300px;
+}
+.ais-SearchBox-submit {
+  display: none;
+}
+
+.ais-CurrentRefinements ul {
+  list-style: none;
+}
+.ais-CurrentRefinements-categoryLabel {
+  line-height: 18px;
+  font-size: 12px;
+}
+.ais-CurrentRefinements-delete {
+  margin: 0;
+  padding: 0;
+}
+.ais-CurrentRefinements-label {
+  line-height: 18px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Changes to search box */
+
+.ais-SearchBox-form {
+  display: flex;
+}
+
+.ais-SearchBox-resetIcon {
+  fill: #ffffff;
+}
+
+.ais-SearchBox-reset {
+  background: none;
+  border: none;
+}
